@@ -1,0 +1,164 @@
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.25fr auto 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100px;
+}
+
+
+.header{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
+}
+
+/*
+.menu{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.story{
+    grid-area: story;
+}
+
+.characters{
+    grid-area: characters;
+}
+
+.gameplay{
+    grid-area: gameplay;
+}
+
+.upgrades{
+    grid-area: upgrades;
+}
+
+.allies{
+    grid-area: allies;
+}
+*/
+
+.topic{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.content{
+    grid-area: content;
+}
+
+.card{
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: auto;
+}
+
+.card_image{
+    grid-column: 4/5;
+    align-self: center;
+}
+
+.card_content{
+    align-self: flex-start;
+}
+
+
+/* ============= MEDIA QUERIES Medium: 800px =============*/
+@media (min-width: 800px) {
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr 0.25fr auto 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .header{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    .menu{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .topic{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+
+    img{
+        display: block;
+        width: 130px;
+    }
+    
+    .card{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .card_image{
+        align-self: flex-start;
+    }
+
+    .card_content{
+        ;
+    }
+
+}
+
+
+/* ============= MEDIA QUERIES Large: 1000px ============*/
+
+@media (min-width: 1000px) {
+    .layout{
+        display: grid;
+    }
+    
+    .header{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    .menu{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .topic{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    
+    img{
+        display: block;
+        width: 150px;
+    }
+    
+    .card{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        max-width: auto;
+    }
+
+    .card_image{
+        align-self: center;
+    }
+
+    .card_content{
+        align-self: flex-start;
+    }
+
+}

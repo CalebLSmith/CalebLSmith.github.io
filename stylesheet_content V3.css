@@ -1,0 +1,296 @@
+/*FLEXBOX*/
+
+
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header_image{
+    width: 75%;
+}
+
+.menu{
+    width: 100%;
+    justify-self: flex-start;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu li{
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.topic{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image{
+    display: block;
+    width: 75%;
+    justify-content: center;
+}
+
+.text{
+    display: block;
+    width: 100%;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.card_image{
+    width: 33%;
+}
+
+.card_content{
+    width: 66%;
+}
+
+.grid{
+    display: grid;
+    justify-self: flex-end;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "story"
+        "characters"
+        "gameplay"
+        "upgrades"
+        "allies"
+}
+
+.story{
+    grid-area: story;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.story_image{
+    width: 33%;
+}
+
+.story_content{
+    width: 66%;
+}
+
+.characters{
+    grid-area: characters;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.character_image{
+    width: 33%;
+}
+
+.character_content{
+    width: 66%;
+}
+
+.gameplay{
+    grid-area: gameplay;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.gameplay_image{
+    width: 33%;
+}
+
+.gameplay_content{
+    width: 66%;
+}
+
+.upgrades{
+    grid-area: upgrades;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.upgrades_image{
+    width: 33%;
+}
+
+.upgrades_content{
+    width: 66%;
+}
+
+.allies{
+    grid-area: allies;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.allies_image{
+    width: 33%;
+}
+
+.allies_content{
+    width: 66%;
+}
+
+
+/* ============= MEDIA QUERIES Medium: 800px =============*/
+
+@media (min-width: 800px) {
+    
+    .header_image{
+        width: 45%;
+    }
+    
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "story story"
+            "characters characters"
+            "gameplay gameplay"
+            "upgrades upgrades"
+            "allies allies"
+    }
+
+    
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        align-content: center;
+    }
+    
+    .card_image{
+        width: 33%;
+    }
+    
+    .card_content{
+        width: 66%;
+    }
+    
+    .menu{
+        width: 100%;
+        justify-self: flex-start;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu li{
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+}
+
+
+/* ============= MEDIA QUERIES Large: 1000px ============*/
+
+@media(min-width: 1000px) {
+    
+    .header_image{
+        width: 30%;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "story story"
+            ". characters"
+            "gameplay ."
+            ". upgrades"
+            "allies ."
+    }
+    
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        align-content: center;
+    }
+
+    .card_image{
+        width: 33%;
+    }
+
+    .card_content{
+        width: 66%;
+    }
+        
+    .menu{
+        width: 100%;
+        justify-self: flex-start;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu li{
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+    }   
+}

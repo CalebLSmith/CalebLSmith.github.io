@@ -1,0 +1,142 @@
+/*Flexbox*/
+
+
+
+
+
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header"
+        "menu"
+        "story"
+        "characters"
+        "gameplay"
+        "upgrades"
+        "allies"
+        ;
+}
+
+
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+.header_image{
+    width: 60%;
+    height: ;
+}
+
+.menu{
+    grid-area: menu;    
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu li{
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.story{
+    grid-area: story;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.story_image{
+    width: ;
+}
+
+.story_content{
+    width: ;
+}
+
+.characters{
+    grid-area: characters;
+}
+
+.gameplay{
+    grid-area: gameplay;
+}
+
+.upgrades{
+    grid-area: upgrades;
+}
+
+.allies{
+    grid-area: allies;
+}
+
+
+
+/* ============= MEDIA QUERIES Medium: 800px =============*/
+@media (min-width: 800px) {
+   
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "menu menu"
+            "story story"
+            "characters characters"
+            "gameplay gameplay"
+            "upgrades upgrades"
+            "allies allies"
+            ;
+    }
+    
+    .header_image{
+        width: 45%;
+    }
+
+    
+}
+
+
+/* ============= MEDIA QUERIES Large: 1000px ============*/
+
+@media (min-width: 1000px) {
+   
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "menu menu"
+            "story story"
+            "characters characters"
+            "gameplay gameplay"
+            "upgrades upgrades"
+            "allies allies"
+            ;
+    }
+    
+    .header_image{
+        width: 30%;
+    }
+
+    
+}
